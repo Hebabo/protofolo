@@ -64,8 +64,10 @@ nav ul{
 }
 nav a{
     text-decoration: none;
-    color: var(--lighter-blue2);
-    
+    color: var(--lighter-blue2);  
+}
+nav a:hover{
+    color: var(--green);  
 }
 nav button{
     background-color: var(--green);
@@ -618,4 +620,9 @@ footer a{
         flex-direction: column;
         align-items: center;
     } */
+    header{
+        display: flex; 
+        gap: 20px;
+        flex-direction: column;
+    }
 }
