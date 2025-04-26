@@ -326,31 +326,31 @@ img {
 .portfolio .clip{
     width: 25%;
     margin: 0.5rem;
+    position: relative;
 }
 .portfolio .clip img{
     background-image: cover;
     width: 100%;
     border-radius: 10px;
     height: 19vh;
-    position: relative;
-    z-index: 6;
 }
-.portfolio .clip img:hover{
-    opacity: 0.8;
-    z-index: 4;
+.portfolio .clip .desc:hover{
+    opacity: 1;
 }
 .portfolio .clip .desc{
     color: var(--green);
+    border-radius: 10px;
+    background-color: #37352877;
+    width: 100%;
+    height: 19vh;
+
     font-weight: bold;
     font-size: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     position: absolute;
-    top: 0px;
-    z-index: 5;
-    top:20%;
-    left: 25%;
+    /* top: 0px; */
+    opacity: 0;
+    z-index: 20;
+
 }
 
 
@@ -378,12 +378,12 @@ img {
 }
 .testmonial .cards{
     background-color: var(--lighter-blue7);
-    width: 60svw;
-    height: 60svh;
+    width: 60%;
+    height: 15rem;
 }
 .testmonial .cards .card{
     width: 60svw;
-    height: 60svh;
+    /* height: 15svh; */
     padding: 1rem;
     position: absolute;
     top: 0px;
@@ -393,6 +393,7 @@ img {
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
+    
 }
 .testmonial .cards *{
     display: flex;
@@ -404,9 +405,10 @@ img {
 .testmonial .swapIMG{
     width: 100%;
     flex-direction: row;
+    display: flex;
     position: absolute;
-    top: 24rem;
-    gap:2rem;
+    gap: 10px;
+    bottom: -2.2rem;
 }
 .testmonial button{
     color: transparent;
@@ -624,5 +626,8 @@ footer a{
         display: flex; 
         gap: 20px;
         flex-direction: column;
+    }
+    .main{
+        padding-top: 10rem;
     }
 }
